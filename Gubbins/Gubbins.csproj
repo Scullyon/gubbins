@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <LangVersion>9</LangVersion>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>nullable</WarningsAsErrors>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>..\..\..\Signing Keys\Gubbins.snk</AssemblyOriginatorKeyFile>
+        <Title>Gubbins</Title>
+        <Authors>Aaron Scully</Authors>
+        <Description>General purpose utility library for .NET</Description>
+        <Copyright>Aaron Scully</Copyright>
+        <PackageProjectUrl>www.gubbins.net</PackageProjectUrl>
+        <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+        <PackageIconUrl>https://www.gubbins.net/images/gubbins_logo.png</PackageIconUrl>
+        <RepositoryUrl>https://github.com/Scullyon/gubbins</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\..\..\Signing Keys\Gubbins.snk">
+        <Link>Gubbins.snk</Link>
+      </None>
+    </ItemGroup>
+
+</Project>

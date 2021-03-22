@@ -1,0 +1,5 @@
+**/obj/
+**/bin/
+.idea/
+Gubbins.sln.DotSettings
+Gubbins.sln.DotSettings.user
