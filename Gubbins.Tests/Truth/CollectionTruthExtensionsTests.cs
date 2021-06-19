@@ -11,7 +11,7 @@ namespace Gubbins.Tests.Truth
     public class CollectionTruthExtensionsTests
     {
         //#####################################################
-        // None(ICollection&lt;T&gt;?) tests
+        // None(ICollection<T>?) tests
         //#####################################################
         
         /// <summary>
@@ -48,7 +48,7 @@ namespace Gubbins.Tests.Truth
         }     
         
         //########################################################
-        // None(ICollection&lt;T&gt;?, Func&lt;T, bool&gt;) tests
+        // None(ICollection<T>?, Func<T, bool>) tests
         //########################################################
         
         /// <summary>

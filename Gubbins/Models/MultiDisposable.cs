@@ -44,7 +44,7 @@ namespace Gubbins.Models
         /// Disposes of all tracked objects in the reverse order in which they were added to this model. An exception
         /// thrown by disposing of an object will not prevent other object's Dispose() method from being called.
         /// </summary>
-        /// <exception cref="Exception?">The last exception thrown by disposing of the IDisposable objects added
+        /// <exception cref="Exception">The last exception thrown by disposing of the IDisposable objects added
         /// to this model, if any, will be re-thrown after all objects have been disposed.</exception>
         public void Dispose()
         {

@@ -21,7 +21,7 @@ namespace Gubbins.Validation
         /// the parameter name. Default null.</param>
         /// <returns>The value if it is not null.</returns>
         /// <exception cref="ArgumentNullException">Thrown if the supplied value is null.</exception>
-        public static T? EnsureNotNull<T>(this T? value, string? paramName = null) where T : class 
+        public static T EnsureNotNull<T>(this T? value, string? paramName = null) where T : class 
         {
             if (null == value)
             {

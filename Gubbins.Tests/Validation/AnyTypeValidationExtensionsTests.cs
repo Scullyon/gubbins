@@ -53,7 +53,7 @@ namespace Gubbins.Tests.Validation
         public void EnsureNotNull_NonNullValue_NoParameterName_ReturnsValue()
         {
             object o = new object();
-            object? result = o.EnsureNotNull();
+            object result = o.EnsureNotNull();
             Assert.AreSame(o, result);
         }
         
