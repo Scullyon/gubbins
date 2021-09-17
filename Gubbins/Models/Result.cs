@@ -9,7 +9,7 @@ using Gubbins.Validation;
 namespace Gubbins.Models
 {
     /// <summary>
-    /// Contains information on whether an operation succeeded or failed
+    /// Contains information on whether a method or function succeeded or failed
     /// and any errors, if the latter.
     /// </summary>
     public class Result
@@ -97,7 +97,12 @@ namespace Gubbins.Models
         /// <returns>A multi-line string containing errors, or an empty string if there are no errors.</returns>
         private string ConvertErrorsToSingleString()
         {
-            return Errors.ConvertToSingleString(e => e.ToString().Trim());
+            string errorsInOneString = Errors.ConvertToSingleString(e => e.ToString().Trim());
+            if (string.Empty == errorsInOneString)
+            {
+                errorsInOneString = "no detailed error information.";
+            }
+            return errorsInOneString;
         }
     }
 }
